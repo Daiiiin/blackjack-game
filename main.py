@@ -73,7 +73,8 @@ def play_blackjack():
             computer_cards.append(random.choice(cards))
             computer_score = calculate_cards(computer_cards)
             if computer_score > 21:
-                display_final_hand(player_cards, computer_cards, user_score, computer_score,"Computer went over! You Win!")
+                display_final_hand(player_cards, computer_cards, user_score, computer_score,
+                                   "Computer went over! You Win!")
                 return
             elif computer_score == 21:
                 computer_score = 0  # Blackjack
